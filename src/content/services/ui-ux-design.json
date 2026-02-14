@@ -1,0 +1,12 @@
+{
+  "title": "UI/UX Design",
+  "description": "I design intuitive, user-centric interfaces. From wireframing to high-fidelity prototypes, I focus on clarity, hierarchy, and ease of use.",
+  "icon": "Palette",
+  "items": [
+    "Wireframing",
+    "Prototyping",
+    "User Flows",
+    "Design Systems"
+  ],
+  "order": 1
+}

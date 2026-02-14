@@ -1,0 +1,104 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  # Site Settings (Hero, About, Contact, Footer)
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "src/content/site/settings.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title Start", name: "title", widget: "string"}
+              - {label: "Title Highlight", name: "titleHighlight", widget: "string"}
+              - {label: "Title End", name: "titleEnd", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+              - {label: "Primary Button Text", name: "primaryButtonText", widget: "string"}
+              - {label: "Secondary Button Text", name: "secondaryButtonText", widget: "string"}
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Paragraphs", name: "paragraphs", widget: "list", field: {label: "Paragraph", name: "paragraph", widget: "text"}}
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "text"}
+              - {label: "Email", name: "email", widget: "string"}
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Copyright Text", name: "copyright", widget: "string"}
+
+  # Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Tech Stack", name: "tech", widget: "list"}
+      - {label: "Live URL", name: "liveUrl", widget: "string", required: false}
+      - {label: "GitHub URL", name: "githubUrl", widget: "string", required: false}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  # Services
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services"
+    create: true
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon Name", name: "icon", widget: "select", options: ["Palette", "Code", "Layers", "Monitor", "Smartphone", "Database", "Cloud", "Lock"]}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Service Items", name: "items", widget: "list"}
+      - {label: "Order", name: "order", widget: "number", default: 1}
+
+  # Skills
+  - name: "skills"
+    label: "Skills"
+    files:
+      - label: "Skills"
+        name: "skills"
+        file: "src/content/skills/skills.json"
+        fields:
+          - label: "Skill Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - {label: "Category Title", name: "title", widget: "string"}
+              - {label: "Skills", name: "skills", widget: "list"}
+
+  # Testimonials
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/content/testimonials"
+    create: true
+    format: "json"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Company", name: "company", widget: "string", required: false}
+      - {label: "Quote", name: "quote", widget: "text"}
+      - {label: "Order", name: "order", widget: "number", default: 1}

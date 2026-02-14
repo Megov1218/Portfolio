@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Designing and Building",
+    "titleHighlight": "Meaningful",
+    "titleEnd": "Digital Experiences",
+    "subtitle": "I craft structured, user-centric interfaces that blend aesthetics with functionality. Focusing on premium digital products.",
+    "primaryButtonText": "View Projects",
+    "secondaryButtonText": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "I am a design-focused engineer who believes that great software is born at the intersection of technical excellence and user empathy. I don't just write code; I build products that solve real problems.",
+      "With a strong background in UI/UX and Frontend Development, I bridge the gap between design and engineering. I care deeply about the details—spacing, typography, animations, and performance—ensuring that every interaction feels intentional.",
+      "My approach is minimal, structured, and user-first. I avoid clutter and focus on clarity, creating digital experiences that are not only beautiful but also intuitive and accessible."
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Interested in working together? Fill out the form below or send me an email.",
+    "email": "your.email@example.com"
+  },
+  "footer": {
+    "copyright": "© 2024 Your Name. All rights reserved."
+  }
+}

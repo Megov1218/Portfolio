@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "title": "Design",
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "Prototyping",
+        "User Research",
+        "Color Theory",
+        "Typography"
+      ]
+    },
+    {
+      "title": "Frontend",
+      "skills": [
+        "React",
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "HTML5 & CSS3"
+      ]
+    },
+    {
+      "title": "Backend / Tools",
+      "skills": [
+        "Node.js",
+        "Git & GitHub",
+        "Vite",
+        "Decap CMS",
+        "VS Code",
+        "Vercel/Netlify"
+      ]
+    }
+  ]
+}

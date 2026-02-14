@@ -1,0 +1,12 @@
+{
+  "title": "Frontend Development",
+  "description": "I build responsive, performant web applications using modern technologies. I ensure that the implementation matches the design pixel-perfectly.",
+  "icon": "Code",
+  "items": [
+    "React & Vite",
+    "Tailwind CSS",
+    "Interactive UI",
+    "Performance"
+  ],
+  "order": 2
+}
